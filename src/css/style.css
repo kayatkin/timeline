@@ -1,0 +1,116 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  text-align: center;
+  padding: 25px;
+}
+
+.container {
+  gap: 30px;
+  flex-direction: column;
+  display: flex;
+  background-color: rgb(217, 250, 215);
+  border: 1px solid #9e2c2c;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  min-height: 250px;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  transform: translateY(-50%);
+}
+
+button:focus,
+input:focus {
+  background-color: #f7dada;
+  color: whitesmoke;
+  outline: none;
+}
+
+button:hover,
+input:hover {
+  border: 1px solid rgb(184, 123, 123);
+}
+
+/* for modal */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 15% auto 1% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.modal h4 {
+  margin-bottom: 10px;
+}
+
+.modal p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.modal label {
+  display: block;
+  text-align: left;
+}
+
+.btn-modal-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.close-btn {
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+.error-container {
+  display: none;
+  position: absolute;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 150px;
+  background-color: white;
+  top: 45%;
+  left: 31%;
+  border: 1px solid #e74a4a;
+  font-size: 1.25rem;
+  color: #e74a4a;
+  padding: 0.25rem;
+  width: 38%;
+  border-radius: 8px;
+}
